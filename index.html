@@ -1219,9 +1219,8 @@ function buildOutputText() {
     lines.push(`━━━━━━━━━━━━━━━━━━━━━━━━━━━━━`);
     g.members.forEach(m => {
       const leaderMark = m.leader ? ' [LEADER]' : '';
-      const meta = `(${m.unit}, ${m.gender === 'girl' ? 'Girl' : 'Boy'}, Tent ${m.tent})`;
       const namePart = m.leader ? `**${m.name}**` : m.name;
-      lines.push(`  ${namePart}${leaderMark}  ${meta}`);
+lines.push(`  ${namePart}${leaderMark}`);
     });
     lines.push('');
   });
